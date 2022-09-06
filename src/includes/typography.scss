@@ -1,28 +1,29 @@
 @use 'theme';
 
+
 h1 {
-    font-size: calc(theme.$baseFontSize * 3);
+    font-size: calc(theme.$base-font-size * 3);
 
 }
 
 h2 {
-    font-size: calc(theme.$baseFontSize * 2.6);
+    font-size: calc(theme.$base-font-size * 2.6);
 }
 
 h3 {
-    font-size: calc(theme.$baseFontSize * 2.2);
+    font-size: calc(theme.$base-font-size * 2.2);
 }
 
 h4 {
-    font-size: calc(theme.$baseFontSize * 1.8);
+    font-size: calc(theme.$base-font-size * 1.8);
 }
 
 h5 {
-    font-size: calc(theme.$baseFontSize * 1.4);
+    font-size: calc(theme.$base-font-size * 1.4);
 }
 
 h6 {
-    font-size: calc(theme.$baseFontSize * 1.2);
+    font-size: calc(theme.$base-font-size * 1.2);
 }
 
 p,
@@ -31,7 +32,7 @@ ul,
 ol,
 code,
 pre {
-    font-size: calc(theme.$baseFontSize * 1);
+    font-size: calc(theme.$base-font-size * 1);
 }
 
 code {
@@ -69,13 +70,12 @@ ul li {
 ul li:before {
     display: inline;
     margin-right: 10px;
-
     vertical-align: middle;
     content: '•';
 }
 
 ol {
-    counter-reset: cupcakee
+    counter-reset: cupcake
 }
 
 ol li {
@@ -86,7 +86,5 @@ ol li:before {
     content: counters(cupcake, '.') '.';
     display: inline;
     margin-right: 10px;
-
     vertical-align: middle;
-
 }

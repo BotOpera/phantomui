@@ -1,0 +1,8 @@
+@use 'theme';
+
+.input {
+    border: theme.$border;
+    border-radius: theme.$radius;
+    padding: .5rem;
+    background-color: #fff;
+}

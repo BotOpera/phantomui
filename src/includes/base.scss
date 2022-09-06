@@ -1,12 +1,18 @@
 @use './theme.scss' as theme;
 
 body {
-    font-family: theme.$fontFamily;
+    font-family: theme.$font-family;
     font-size: 16px;
+    color: theme.$text-dark;
+    background-color: theme.$background-light;
 }
 
 div,
 p {
     margin: .2rem;
     padding: .2rem;
+}
+
+hr {
+    color: theme.$color-border;
 }

@@ -1,0 +1,55 @@
+@use 'theme';
+
+button {
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: theme.$radius;
+
+    &.primary {
+        background-color: theme.$color-primary;
+        color: theme.$text-light;
+
+        &:hover {
+            background-color: lighten($color: theme.$color-primary, $amount: theme.$lighten);
+        }
+    }
+
+    &.success {
+        background-color: theme.$color-success;
+        color: theme.$text-light;
+
+        &:hover {
+            background-color: lighten($color: theme.$color-success, $amount: theme.$lighten);
+        }
+    }
+
+    &.warning {
+        background-color: theme.$color-warning;
+        color: theme.$text-light;
+
+        &:hover {
+            background-color: lighten($color: theme.$color-warning, $amount: theme.$lighten);
+        }
+    }
+
+    &.error {
+        background-color: theme.$color-error;
+        color: theme.$text-light;
+
+        &:hover {
+            background-color: lighten($color: theme.$color-error, $amount: theme.$lighten);
+        }
+    }
+
+    &.accent {
+        background-color: theme.$color-accent;
+        color: theme.$text-light;
+
+        &:hover {
+            background-color: lighten($color: theme.$color-accent, $amount: theme.$lighten);
+        }
+    }
+
+}

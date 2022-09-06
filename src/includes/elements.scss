@@ -1,0 +1,39 @@
+@use 'theme';
+
+
+table.border {
+    border: theme.$border;
+
+    th {
+        padding: theme.$base-padding;
+    }
+
+    td {
+        border-left: theme.$border;
+        border-right: theme.$border;
+        padding: theme.$base-padding;
+    }
+
+    tr {
+        border-top: theme.$border;
+        border-bottom: theme.$border;
+    }
+
+}
+
+table.striped-even {
+    tr:nth-child(even) {
+        background-color: theme.$line-grey;
+    }
+}
+
+table.striped-odd {
+    tr:nth-child(odd) {
+        background-color: theme.$line-grey;
+    }
+}
+
+.card {
+    padding: theme.$base-padding;
+    box-shadow: 0 0 2px theme.$line-grey;
+}
