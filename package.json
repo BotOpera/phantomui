@@ -1,0 +1,33 @@
+{
+  "name": "phantomcss",
+  "version": "0.0.1",
+  "description": "A simple unobtrusive css framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-exp": "sass src:css --no-source-map",
+    "build-min": "sass ./src/phantom.scss ./css/phantom.min.css --style=compressed --no-source-map",
+    "build": "npm run build-exp && npm run build-min",
+    "watch": "sass --watch src:css --no-source-map",
+    "serve": "http-server -c-1",
+    "start": "concurrently \"npm:watch\" \"npm:serve\""
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "framework",
+    "ui"
+  ],
+  "author": "Matt Monroe",
+  "license": "MIT",
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.54.8"
+  }
+}

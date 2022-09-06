@@ -1,0 +1,43 @@
+@use './includes/reset.scss';
+@use './includes/grid.scss';
+@use './includes/theme.scss' as theme;
+@use './includes/base';
+@use './includes/typography.scss' as typ;
+
+
+
+
+
+.button {
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: theme.$radius;
+}
+
+.primary {
+    background-color: theme.$color-primary;
+    color: theme.$text-light;
+}
+
+.primary:hover {
+    background-color: lighten($color: theme.$color-primary, $amount: theme.$lighten);
+}
+
+.input {
+    border: 1px solid theme.$line-grey;
+    border-radius: theme.$radius;
+    padding: .5rem;
+    background-color: #fff;
+}
+
+.card {
+    padding: theme.$base-padding;
+    box-shadow: 0 0 2px theme.$line-grey;
+}
+
+input[type=checkbox] {
+    @extend .input;
+    cursor: pointer;
+}

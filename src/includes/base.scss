@@ -1,0 +1,12 @@
+@use './theme.scss' as theme;
+
+body {
+    font-family: theme.$fontFamily;
+    font-size: 16px;
+}
+
+div,
+p {
+    margin: .2rem;
+    padding: .2rem;
+}
