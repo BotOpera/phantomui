@@ -1,8 +1,11 @@
 {
-  "name": "phantomcss",
+  "name": "@botopera/phantomui",
   "version": "0.0.1",
   "description": "A simple unobtrusive css framework.",
-  "main": "index.js",
+  "main": "index.html",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-exp": "sass src:css --no-source-map",
@@ -20,6 +23,11 @@
     "ui"
   ],
   "author": "Matt Monroe",
+  "repository": "https://github.com/BotOpera/phantomui.git",
+  "bugs": {
+    "email": "matthewryan.monroe@gmail.com",
+    "url": "https://github.com/BotOpera/phantomui/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@csstools/postcss-sass": "^5.0.1",
