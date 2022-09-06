@@ -4,7 +4,7 @@
   "description": "A simple unobtrusive css framework.",
   "main": "index.html",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://registry.npmjs.org"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
